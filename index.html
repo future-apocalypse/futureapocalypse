@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihail Verejan | iOS & Unity Developer</title>
+    <link rel="stylesheet" href="styles/main.css?v=4">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Download CV</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <!-- Hero / About Section -->
+        <section id="about" class="hero section-spacing">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome.</h1>
+                <p class="hero-description">
+                    I'm Mihail Verejan - Mobile Developer (Unity & iOS)<br>
+                    Building optimized mobile games with Unity and native iOS apps with Swift.<br>
+                    Open to full-time roles in Unity or iOS development.
+                </p>
+                <a href="#portfolio" class="explore-btn">
+                    <span class="mouse-icon"></span>
+                    Explore
+                </a>
+            </div>
+            <div class="hero-image-container">
+                <div class="blob-shape">
+                    <!-- Profile image placeholder -->
+                    <img src="https://via.placeholder.com/300x300.png?text=Profile" class="profile-img">
+                </div>
+                <div class="decorative-blob"></div>
+            </div>
+        </section>
+
+        <!-- Portfolio Header -->
+        <section id="portfolio" class="portfolio-header section-spacing">
+            <div class="section-header">
+                <span class="section-subtitle">PORTFOLIO</span>
+                <h2 class="section-title">My Projects</h2>
+            </div>
+        </section>
+
+        <!-- Project 1: Unity Game (App Store Style) -->
+        <section class="appstore-section section-spacing">
+            <!-- Header: Icon + Info -->
+            <div class="appstore-header">
+                <img src="assets/Games/Mallowrise/Mallowrise.png" alt="Mallowrise Icon" class="appstore-icon">
+                <div class="appstore-info">
+                    <h2 class="appstore-name">Mallowrise</h2>
+                    <p class="appstore-subtitle">Mobile Arcade Game</p>
+                </div>
+            </div>
+            <!-- Preview -->
+            <div class="appstore-preview">
+                <div class="webgl-placeholder">
+                    <div class="game-wrapper">
+                        <iframe
+                            id="mallowrise-frame"
+                            class="webgl-frame"
+                            title="Mallowrise WebGL game"
+                            loading="lazy">
+                        </iframe>
+                        <div class="game-overlay">
+                            <button class="game-play-button" type="button">
+                                <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                <span>Play Demo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Two-Column Description -->
+            <div class="project-details-grid">
+                <div class="project-details-col">
+                    <h3>Project Overview</h3>
+                    <ul>
+                        <li>Built with Unity (URP)</li>
+                        <li>Written in C#</li>
+                        <li>Physics-based movement system</li>
+                        <li>Mobile-first gameplay design</li>
+                        <li>iOS build pipeline configured</li>
+                        <li>UI designed in Figma</li>
+                        <li>3D assets modeled in Blender</li>
+                    </ul>
+                </div>
+                <div class="project-details-col">
+                    <h3>Technical Highlights</h3>
+                    <ul>
+                        <li>Optimized Universal Render Pipeline settings for mobile</li>
+                        <li>Reduced draw calls and overdraw</li>
+                        <li>Lightweight shader configuration</li>
+                        <li>Memory-conscious asset pipeline</li>
+                        <li>Fixed DPI scaling for mobile consistency</li>
+                        <li>Modular and clean C# scripts</li>
+                        <li>Object pooling implementation</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- GitHub Button -->
+            <div class="project-actions">
+                <a href="https://github.com/future-apocalypse/Mallowrise" class="github-repo-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    GitHub Repository
+                </a>
+            </div>
+        </section>
+
+        <!-- Project 2: iOS App (App Store Style) -->
+        <section class="appstore-section section-spacing">
+            <!-- Header: Icon + Info -->
+            <div class="appstore-header">
+                <img src="assets/iosApps/AuraCast/AuraCast.png" alt="AuraCast Icon" class="appstore-icon">
+                <div class="appstore-info">
+                    <h2 class="appstore-name">AuraCast</h2>
+                    <p class="appstore-subtitle">Simple Weather App</p>
+                </div>
+            </div>
+            <!-- Screenshots -->
+            <div class="appstore-screenshots">
+                <video src="assets/iosApps/AuraCast/Video.mp4" autoplay loop muted playsinline></video>
+                <img src="assets/iosApps/AuraCast/2.png" alt="Screenshot 1">
+                <img src="assets/iosApps/AuraCast/4.png" alt="Screenshot 3">
+            </div>
+            <!-- Two-Column Description -->
+            <div class="project-details-grid">
+                <div class="project-details-col">
+                    <h3>Project Overview</h3>
+                    <ul>
+                        <li>Minimalistic weather application focused on clarity</li>
+                        <li>Built to eliminate unnecessary features and complexity</li>
+                        <li>All UI visuals created in Figma (icons, gradients, layout)</li>
+                        <li>Developed as a personal product and portfolio project</li>
+                    </ul>
+                </div>
+                <div class="project-details-col">
+                    <h3>Technical Highlights</h3>
+                    <ul>
+                        <li>Built with Swift & SwiftUI</li>
+                        <li>CoreLocation integration for live GPS data</li>
+                        <li>Weather data fetched from WeatherAPI</li>
+                        <li>7-day forecast support</li>
+                        <li>Custom city search with live suggestions</li>
+                        <li>Async/await networking architecture</li>
+                        <li>State persistence using @AppStorage</li>
+                        <li>Optimized for modern iPhone devices</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- GitHub Button -->
+            <div class="project-actions">
+                <a href="https://github.com/future-apocalypse/AuraCast" class="github-repo-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    GitHub Repository
+                </a>
+            </div>
+        </section>
+
+        <!-- Skill Section -->
+        <section id="skills" class="skills section-spacing">
+            <div class="section-header">
+                <span class="section-subtitle">ABOUT ME</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
+
+
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon unity-icon"><i class="fa-brands fa-unity"></i></span>
+                        <h3>Unity Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>C# scripting</li>
+                        <li>Unity Engine (2D & 3D)</li>
+                        <li>Universal Render Pipeline (URP)</li>
+                        <li>Mobile optimization & DPI scaling</li>
+                        <li>Physics-based gameplay systems</li>
+                        <li>Object pooling & memory management</li>
+                        <li>Particle systems & visual effects</li>
+                        <li>Prefabs, scenes, and modular project structuring</li>
+                        <li>WebGL / iOS builds for Unity</li>
+                    </ul>
+                    <div class="unity-badges">
+                        <a href="https://www.credly.com/badges/213651f8-6ade-4718-bb05-82242b4f0b2d/public_url"
+                            class="unity-badge" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/Badges/unity-junior-programmer.png" alt="Unity Junior Programmer Badge"
+                                class="badge">
+                            <span class="badge-verify">
+                                Verify
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/ee170855-6007-488b-984b-bf17eaffaf91/public_url"
+                            class="unity-badge" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/Badges/unity-essentials.png" alt="Unity Essentials Badge" class="badge">
+                            <span class="badge-verify">
+                                Verify
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon ios-icon"><i class="fa-brands fa-apple"></i></span>
+                        <h3>iOS App Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Swift & SwiftUI</li>
+                        <li>Xcode</li>
+                        <li>CoreLocation & Location Services</li>
+                        <li>REST API integration / Networking</li>
+                        <li>MVVM / Clean Architecture</li>
+                        <li>App Store submission workflow</li>
+                        <li>Performance optimization for iOS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon code-icon"><i class="fa-solid fa-code"></i></span>
+                        <h3>Development & Design Toolbox</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Xcode</li>
+                        <li>Unity</li>
+                        <li>Git/GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>JetBrains Rider</li>
+                        <li>Blender (3D modeling)</li>
+                        <li>Figma (UI / UX design)</li>
+                        <li>ChatGPT & Claude (AI-assisted development, prototyping)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon lang-icon"><i class="fa-solid fa-earth-americas"></i></span>
+                        <h3>Languages</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>English</li>
+                        <li>Russian</li>
+                        <li>Romanian (Native)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <section id="interests" class="interests section-spacing">
+            <div class="section-header">
+                <h2 class="section-title">Interests</h2>
+            </div>
+
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-header">
+                        <span class="interest-icon yt-icon"><i class="fa-solid fa-rocket"></i></span>
+                        <h3>Continuous Learning</h3>
+                    </div>
+                    <p class="interest-description">
+                        I enjoy exploring new technologies, watching in-depth programming tutorials, and learning about
+                        systems like Linux and software architecture. I’m naturally curious and constantly improving my
+                        technical skill set.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-header">
+                        <span class="interest-icon tv-icon"><i class="fa-solid fa-earth-europe"></i></span>
+                        <h3>Travel & Meeting New People</h3>
+                    </div>
+                    <p class="interest-description">
+                        I value new environments, cultures, and conversations. Meeting different people and experiencing
+                        new places helps broaden perspective and creativity.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-header">
+                        <span class="interest-icon horse-icon"><i class="fa-solid fa-palette"></i></span>
+                        <h3>Digital Art</h3>
+                    </div>
+                    <p class="interest-description">
+                        I appreciate clean, beautiful design and enjoy creating illustrations and UI concepts in Figma.
+                        I’m drawn to minimal aesthetics and thoughtful visual composition.
+
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-header">
+                        <span class="interest-icon swim-icon"><i class="fa-solid fa-brain"></i></span>
+                        <h3>Philosophy & Human Psychology</h3>
+                    </div>
+                    <p class="interest-description">
+                        I’m interested in Stoicism, strategic thinking, and behavioral psychology. I enjoy understanding
+                        how people think, make decisions, and respond to systems and incentives.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="contact-footer">
+        <div class="contact-btn">CONTACT ME</div>
+        <div class="contact-links">
+            <div class="contact-link">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email</span>
+                <a href="mailto:mtrebish3@outlook.com">mtrebish3@outlook.com</a>
+            </div>
+            <div class="contact-link">
+                <i class="fa-brands fa-square-linkedin"></i>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/futureapocalypse/" target="_blank" rel="noopener noreferrer">
+                    futureapocalypse
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-circle-up" aria-hidden="true"></i>
+    </button>
+
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
