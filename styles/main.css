@@ -9,7 +9,7 @@
     --card-bg: #2A2850;
     --accent-blue: #2A365C;
     /* Light blue blob background */
-    --accent-purple: #3A2B5C;
+    --accent-purple: #2A2850;
     /* Light purple blob background */
     --accent-pink: #4A2A40;
     /* Light pink blob background */
@@ -269,7 +269,7 @@ button {
 }
 
 .profile-img {
-    width: 90%;
+    width: 100%;
     object-fit: contain;
     /* In the mockup, the head/shoulders pop out of the bottom */
 }
@@ -280,7 +280,7 @@ button {
     }
 
     100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 48% 52% 58% 42% / 48% 42% 58% 52%;
     }
 }
 
@@ -421,10 +421,12 @@ button {
 }
 
 .webgl-placeholder {
-    width: 960px;
-    height: 540px;
+    width: 100%;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
     background-color: transparent;
     border-radius: var(--radius-md);
+    margin: 0 auto;
 }
 
 .webgl-frame {
@@ -437,9 +439,8 @@ button {
 
 .game-wrapper {
     position: relative;
-    width: 960px;
-    height: 540px;
-    margin: 0 auto; /* center horizontally */
+    width: 100%;
+    height: 100%;
     border-radius: var(--radius-md);
     overflow: hidden;
     background: radial-gradient(circle at 10% 0, rgba(255, 255, 255, 0.05), transparent 55%),
@@ -1216,8 +1217,37 @@ button {
         font-size: 2.5rem;
     }
 
+    .navbar {
+        padding: 0.9rem 6%;
+    }
+
     .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
+        gap: 0.6rem;
+        row-gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .webgl-placeholder {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        padding: 0.75rem 5%;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+        row-gap: 0.45rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
     }
 }
